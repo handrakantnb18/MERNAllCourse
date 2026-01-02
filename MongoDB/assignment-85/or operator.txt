@@ -1,0 +1,33 @@
+
+
+// 85 - Implement the or operator
+
+db.getCollection("users").find({})
+
+// less than and greater than can not be found
+// if greater than found
+
+db.users.find({
+     $or:[
+    {age : {$lt: 20}},
+    {age : {$gt: 50}}
+    ]
+})
+
+// data found less than and greater than
+
+db.users.find({
+     $or:[
+    {age : {$lt: 30}},
+    {age : {$gt: 50}}
+    ]
+})
+
+// data found same age
+
+db.users.find({
+     $or:[
+    {age : 23},
+    {age : 50}
+    ]
+})

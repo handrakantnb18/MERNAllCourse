@@ -1,0 +1,21 @@
+
+// 89 - Implement the different types of Indexes:
+// single field index
+
+db.getCollection("users").find({})
+
+db.users.createIndex({ "name" : "Patricia"})
+db.users.createIndex({"city" : "New York"})
+
+db.users.find({age : 23})
+
+
+
+output :
+
+{
+    "name" : "name_Patricia",
+    "key" : {
+        "name" : "Patricia"
+    }
+}

@@ -1,0 +1,4 @@
+
+MongoDB Starts
+
+// Install the MongoDB server in your system

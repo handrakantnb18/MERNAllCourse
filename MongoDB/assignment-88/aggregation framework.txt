@@ -1,0 +1,38 @@
+
+// Implement the aggregation framework:
+// match, group, project, sort, limit, lookup
+
+db.getCollection("users").find({})
+
+// check the $match data
+
+db.users.aggregate([{
+    $match:{id : 3}
+}])
+
+db.users.aggregate([{
+    $match:{"name" : "Clementine Bauch"}
+}])
+
+
+// check the $group data
+
+db.users.aggregate([{$group: {id: 1}}])
+
+
+// $sort data
+
+db.users.find().sort({id: 5}, {"name" : "Leanne Graham"})
+
+// $limit data 
+
+db.users.find().limit({id: 5})
+
+// $lookup data
+
+db.users.find({
+    $lookup:{
+        id : 1,
+        name : "Leanne Graham",
+    }
+})

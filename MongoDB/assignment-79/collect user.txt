@@ -1,0 +1,11 @@
+
+
+//  Retrieve the data from users collection using find method
+// retrive all data from databases
+
+db.getCollection("users").find({})
+
+// count total number of users
+
+db.users.find({}).count()
+

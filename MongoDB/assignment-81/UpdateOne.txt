@@ -1,0 +1,10 @@
+
+// 81 - updates the users if allready existed using updateOne method
+
+db.getCollection("users").find({})
+
+db.users.updateOne({"name":"Michael"},{$set:{likes:2}})
+
+// update the users using updateMany methods
+
+

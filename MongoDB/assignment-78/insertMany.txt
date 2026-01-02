@@ -1,0 +1,13 @@
+db.getCollection("users").find({ })
+
+// insert many users using insertMany method
+// insert multiple users using array type []
+
+db.users.insertMany([
+
+{name: "Sachin Tendulkar", age : 40, email : "sachin.tendulkar@gmail.com" },
+{name: "rohit sharma" , city: "mumbai", email: "rohit.sharma@gmail.com" },
+{name: "virat kohali" , city: "banglore", email: "viratkohli@gmail.com" },
+{name: "virendar sehwag" , city: "delhi", phone: 9876543210 }
+
+])

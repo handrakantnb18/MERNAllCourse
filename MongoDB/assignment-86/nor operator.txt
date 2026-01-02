@@ -1,0 +1,34 @@
+
+// 86 -  Implemen the nor operator
+
+
+// age in between less than and greater than
+// all other are access
+
+db.users.find({
+     $nor:[
+    {age : {$lt: 30}},
+    {age : {$gt: 50}}
+    ]
+})
+
+// city not search
+
+db.users.find({
+   $nor: [
+   {city: "mumbai" },
+   {city: "banglore"},
+   {city: "Wisokyburgh"},
+   {city: "Bell City"}
+   ]
+})
+
+// not found same age and all other will be found
+// some times not work this logic
+
+db.users.find({
+     $nor:[
+    {age : 23},
+    {age : 50}
+    ]
+})

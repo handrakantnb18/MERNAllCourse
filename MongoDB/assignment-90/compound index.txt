@@ -1,0 +1,55 @@
+
+// 90 - Implement the different types of Indexes:
+// single compound index
+
+db.getCollection("users").find({})
+
+db.users.createIndex({age: 1, name: 1})
+
+db.users.find({age: 23, "name" : "Patricia",})
+
+db.users.find({age: 23, "address.street": "Victor Plains", "city" : "Bessemer city", "name" : "Patricia"})
+
+// data sort compound index
+
+db.users.find({age: {$gt: 50}}).sort({name: 1})
+
+output :
+
+{
+    "_id" : ObjectId("68774f16702c7755bb44153c"),
+    "name" : "Mark",
+    "age" : NumberInt(55),
+    "city" : "Har�ord city",
+    "address" : {
+        "street" : "Victor Plains",
+        "suite" : "Suite 879",
+        "city" : "Wisokyburgh",
+        "zipcode" : "90566-7771"
+    }
+}
+
+db.users.find({age: 23, "address.street": "Victor Plains", "city" : "Bessemer city", "name" : "Patricia" },
+{age: 40, "name" : "Sachin Tendulkar", "email" : "sachin.tendulkar@gmail.com"})
+
+output :
+
+{
+    "_id" : ObjectId("68774f16702c7755bb441530"),
+    "age" : NumberInt(23),
+    "name" : "Sachin Tendulkar",
+    "email" : "sachin.tendulkar@gmail.com"
+}
+
+
+db.users.find(
+{age: 40, "name" : "Sachin Tendulkar", "email" : "sachin.tendulkar@gmail.com"})
+
+output :
+
+{
+    "_id" : ObjectId("68760d9f579ac28afb44152f"),
+    "name" : "Sachin Tendulkar",
+    "age" : NumberInt(40),
+    "email" : "sachin.tendulkar@gmail.com"
+}

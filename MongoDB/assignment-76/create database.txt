@@ -1,0 +1,9 @@
+
+we have creating new database as the SpeedUp and internal tables
+employees
+users
+posts
+customers
+
+
+// After successfully connect, create the database called SpeedUp

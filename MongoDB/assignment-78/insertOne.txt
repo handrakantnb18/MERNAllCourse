@@ -1,0 +1,10 @@
+db.getCollection("users").find({ })
+
+
+// insert one user at a time only
+
+db.users.insertOne(
+
+{name: "Sachin Tendulkar", age : 40, email : "sachin.tendulkar@gmail.com" },
+
+)

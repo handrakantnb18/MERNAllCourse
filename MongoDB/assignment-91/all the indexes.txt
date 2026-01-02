@@ -1,0 +1,15 @@
+
+// 91 - List all the index
+
+db.users.getIndexes({"name" : "Sachin Tendulkar"})
+
+db.users.getIndexes({"name" : "rohit sharma"})
+
+
+db.getCollection("users").find({})
+
+db.users.getIndexes({"name" : "Sachin Tendulkar"})
+
+db.users.getIndexes({"name" : "rohit sharma"})
+
+db.users.getIndexes({age: 28,"name" : "William"})

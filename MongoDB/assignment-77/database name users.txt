@@ -1,0 +1,4 @@
+
+created users database in SpeedUp DB
+
+// Create a collection called users under the SpeedUp DB

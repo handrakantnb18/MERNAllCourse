@@ -1,0 +1,18 @@
+
+
+// 87 - Implemen the not operator
+
+db.getCollection("users").find({})
+
+// found age is not greater than 30 / it is found less than
+
+db.users.find({
+   age: {$not: {$gt : 30}}
+})
+
+// found age is not less than 30 / it is greater than found
+
+db.users.find({
+   age: {$not: {$lt : 30}}
+})
+

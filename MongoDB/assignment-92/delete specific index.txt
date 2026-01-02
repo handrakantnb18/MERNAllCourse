@@ -1,0 +1,7 @@
+
+// 92 -  Delete all the index
+
+db.getCollection("users").find({})
+
+db.users.dropIndex({"name": "Sachin Tendulkar"})
+

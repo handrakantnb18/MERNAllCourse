@@ -1,0 +1,79 @@
+// signments - 82
+
+db.getCollection("users").find({})
+
+// updated email city suite in user database
+// $set operator
+
+db.users.updateOne({
+    "id": 2
+},
+{$set:{
+"username" : "Antonette",
+        "email" : "samas.smith@melissa.tv",
+        "address" : {
+            "street" : "Victor Plains",
+            "suite" : "Suite 123",
+            "city" : "New Yark City",
+            "zipcode" : "90566-8882",
+            "geo" : {
+                "lat" : "-43.9509",
+                "lng" : "-34.4618"
+            }
+        }
+}})
+
+// $unset operator --> used for null values username and lat
+
+       db.users.updateOne({
+           "id": 2
+       },{$unset:{
+         "username" : "",
+        "email" : "samas.smith@melissa.tv",
+        "address" : {
+            "street" : "Victor Plains",
+            "suite" : "Suite 123",
+            "city" : "New Yark City",
+            "zipcode" : "90566-8882",
+            "geo" : {
+                "lat" : "",
+                "lng" : "-34.4618"
+            }
+        }  
+       }}) 
+
+// $push method --> add the arrays in the database
+
+
+db.users.insertOne({id: 1, scores: [ 44, 78, 38, 80, 89 ]})
+
+db.users.updateOne(
+{ _id: 1 },
+   { $push: { scores: 100 } }
+)
+
+db.users.insertOne({
+     "1" : {
+        "id" : NumberInt(2),
+        "name" : "Ervin Howell",
+        "username" : "Antonette",
+        "email" : "Shanna@melissa.tv",
+        "address" : {
+            "street" : "Victor Plains",
+            "suite" : "Suite 879",
+            "city" : "Wisokyburgh",
+            "zipcode" : "90566-7771",
+            "geo" : {
+                "lat" : "-43.9509",
+                "lng" : "-34.4618"
+            }
+        },
+        "phone" : "010-692-6593 x09125",
+        "website" : "anastasia.net",
+        "company" : {
+            "name" : "Deckow-Crist",
+            "catchPhrase" : "Proactive didactic contingency",
+            "bs" : "synergize scalable supply-chains"
+        }
+    },
+})

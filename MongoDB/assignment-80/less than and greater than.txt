@@ -1,0 +1,116 @@
+// find the all users 
+
+db.getCollection("users").find({})
+
+// find the users age is less than 30 in database
+
+db.users.find({"age": {$lt: 30}})
+
+// find the users which is greater than age 30 in database
+
+db.users.find({"age":{$gt: 30}})
+
+// check the database in methods in age and name
+
+db.users.find({"age":{$in:[22, 45]}})
+
+db.users.find({"name":{$in:["Michael","James","Sachin Tendulkar" ]}})
+
+
+// data added in the database
+
+db.users.insertMany([
+
+{"name":"James", "age":21, "city":"New York", "address" : {
+        "street" : "Victor Plains",
+        "suite" : "Suite 879",
+        "city" : "Wisokyburgh",
+        "zipcode" : "90566-7771"}
+    },
+{"name":"Michael", "age":22, "city":"Anniston city", "address" : {
+        "street" : "Victor Plains",
+        "suite" : "Suite 879",
+        "city" : "Wisokyburgh",
+        "zipcode" : "90566-7771"}
+},
+{"name":"Patricia", "age":23, "city":"Bessemer city", "address" : {
+        "street" : "Victor Plains",
+        "suite" : "Suite 879",
+        "city" : "Wisokyburgh",
+        "zipcode" : "90566-7771"}
+},
+{"name":"Robert", "age":25, "city":"Birmingham city", "address" : {
+        "street" : "Victor Plains",
+        "suite" : "Suite 879",
+        "city" : "Wisokyburgh",
+        "zipcode" : "90566-7771"}
+},
+{"name":"Elizabeth", "age":27, "city":"Gadsden city", "address" : {
+        "street" : "Victor Plains",
+        "suite" : "Suite 879",
+        "city" : "Wisokyburgh",
+        "zipcode" : "90566-7771"}
+},
+{"name":"William", "age":28, "city":"Montgomery city", "address" : {
+        "street" : "Victor Plains",
+        "suite" : "Suite 879",
+        "city" : "Wisokyburgh",
+        "zipcode" : "90566-7771"}
+},
+{"name":"Linda", "age":30, "city":"Barstow city", "address" : {
+        "street" : "Victor Plains",
+        "suite" : "Suite 879",
+        "city" : "Wisokyburgh",
+        "zipcode" : "90566-7771"}
+},
+{"name":"Joseph", "age":32, "city":"Bell city", "address" : {
+        "street" : "Victor Plains",
+        "suite" : "Suite 879",
+        "city" : "Wisokyburgh",
+        "zipcode" : "90566-7771"}
+},
+{"name":"Jessica", "age":35, "city":"New York", "address" : {
+        "street" : "Victor Plains",
+        "suite" : "Suite 879",
+        "city" : "Wisokyburgh",
+        "zipcode" : "90566-7771"}
+},
+{"name":"Christopher", "age":39, "city":"Har�ord city", "address" : {
+        "street" : "Victor Plains",
+        "suite" : "Suite 879",
+        "city" : "Wisokyburgh",
+        "zipcode" : "90566-7771"}
+},
+{"name":"Karen", "age":41, "city":"New York", "address" : {
+        "street" : "Victor Plains",
+        "suite" : "Suite 879",
+        "city" : "Wisokyburgh",
+        "zipcode" : "90566-7771"}
+},
+{"name":"Sarah", "age":45, "city":"New York", "address" : {
+        "street" : "Victor Plains",
+        "suite" : "Suite 879",
+        "city" : "Wisokyburgh",
+        "zipcode" : "90566-7771"}
+},
+{"name":"Matthew", "age":43, "city":"New York", "address" : {
+        "street" : "Victor Plains",
+        "suite" : "Suite 879",
+        "city" : "Wisokyburgh",
+        "zipcode" : "90566-7771"}
+},
+{"name":"Anthony", "age":50, "city":"New York", "address" : {
+        "street" : "Victor Plains",
+        "suite" : "Suite 879",
+        "city" : "Wisokyburgh",
+        "zipcode" : "90566-7771"}
+},
+{"name":"Mark", "age":55, "city":"Har�ord city", "address" : {
+        "street" : "Victor Plains",
+        "suite" : "Suite 879",
+        "city" : "Wisokyburgh",
+        "zipcode" : "90566-7771"}
+}
+
+]
+)

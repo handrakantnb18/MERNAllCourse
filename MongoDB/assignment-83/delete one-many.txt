@@ -1,0 +1,25 @@
+
+
+// 83- Implement the deleteOne, deleteMany with filter and empty the collection
+
+//deleteOne method 
+
+ db.users.deleteOne({"name" : "Leanne Graham"})
+
+// deleteMany method
+
+db.users.deleteMany({"name" : "Leanne Graham"})
+
+db.users.deleteMany({"name" : "Leanne Graham"},{"city":"new yark"})
+
+db.collection.deleteMany({
+{"name" : "Leanne Graham"},{"city":"new yark"}
+})
+
+
+output:
+
+{
+    "acknowledged" : true,
+    "deletedCount" : 0.0
+}

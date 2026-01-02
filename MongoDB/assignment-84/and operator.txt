@@ -1,0 +1,32 @@
+
+// implements the and operator
+
+db.getCollection("users").find({})
+
+// find less than age and operator
+
+db.users.find({
+     $and:[
+    {age:{$lt : 28}},
+    {"city" : "Bessemer city"}
+    ]
+})
+
+// find greater than and operator
+
+db.users.find({
+     $and:[
+    {age:{$gt : 23}},
+    {"city" : "Bessemer city"}
+    ]
+})
+
+// same age quary
+
+db.users.find({
+     $and:[
+    {age : 23},
+    {"city" : "Bessemer city"}
+    ]
+})
+
