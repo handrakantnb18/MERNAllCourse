@@ -1,0 +1,29 @@
+/* Implement the css functions */
+
+#div1{
+    position: absolute;
+    left: 50px;
+    width: calc(100% - 100px);
+    border: 2px solid #a50303;
+    background-color: yellow;
+    padding: 5px;
+    text-align: center;
+}
+
+p{
+    font-size: clamp(1rem, 2.5vw, 2.5rem);
+    width: calc(100% - 100px);
+    border: 5px solid black;
+    padding: 50px;
+    text-align: justify;
+    text-justify: auto;
+    color: #030342;
+    background-color: antiquewhite;
+}
+
+h1 {
+  font-size: clamp(4rem, 2.5vw, 3.5rem);
+  background-color: #e8f1ee;
+  color: #a50303;
+  
+}

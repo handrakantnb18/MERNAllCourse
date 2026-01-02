@@ -1,0 +1,46 @@
+
+body{
+    padding: 20px;
+    margin: 20px;
+}
+/* Group selector */
+table, tr, th, td {
+    border: 1px  solid #343801;
+    text-align: left;
+    color: #160231;
+    background-color: #f5f0f0;
+}
+
+/* ID selector */
+#header
+{
+    color: #1405a1;
+    text-align: justify;
+    text-transform: none;
+    touch-action: double-tap-zoom;
+}
+
+/* Attribute selector */
+input[type=text],[type=number],[type=password], select{
+    width: 50%;
+    border: 1px solid #1f1515;
+    padding: 12px 20px;
+    margin: 8px 10px;
+    
+    border-radius: 4px;
+    box-sizing: border-box;
+    
+}
+input[type=button], select{
+    color: #cdff16;
+    background-color: #1e0579;
+    padding: 10px;
+    margin: 10px;
+}
+
+input:hover[type=button], select{
+    color: #faf9f7;
+    background-color: #047204;
+    padding: 10px;
+    margin: 10px;
+}

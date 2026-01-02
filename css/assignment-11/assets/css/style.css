@@ -1,0 +1,35 @@
+
+body{
+    background-color: #fcfcfa;
+}
+/* attribute value */
+a[target]
+{
+    background-color: #8d94a7;
+    color: #e73111;
+    text-align: justify;
+}
+a:hover[target]
+{
+    background-color: #f8f8fa;
+    color: #160231;
+    text-align: justify;
+}
+
+/* attribute with value */
+input[type="text"]
+{
+    border: 2px solid;
+    text-align: left;
+    background-color: white;
+    padding: 5px;
+    margin: 5px;
+}
+
+input[type="password"]{
+    border: 2px solid;
+    text-align: left;
+    background-color: white;
+    padding: 5px;
+    margin: 5px;
+}

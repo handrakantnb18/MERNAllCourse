@@ -1,0 +1,83 @@
+/*  Parcent % */
+.Parcent{
+    font-size: 100%;
+    background-color: #a2e4e4;
+    padding: 15px;
+    margin: 10px;
+}
+.Parcent{
+    font-size: 100%;
+    background-color: #a2e4e4;
+    padding: 15px;
+    margin: 10px;
+}
+
+.parent{
+    background: #cec4e9;
+    border: 1px solid black;
+    padding: 15px;
+    margin: 10px;
+    font-size: 30px;
+}
+/* em, rem  */
+.one-rem{
+    font-size: 1rem;
+    background-color: azure;
+    padding: 15px;
+    margin: 10px;
+}
+.one-em{
+    font-size: 1em;
+    background-color: azure;
+    padding: 15px;
+    margin: 10px;
+}
+.two-rem{
+    font-size: 2rem;
+    background-color: #f0fc83;
+    padding: 15px;
+    margin: 10px;
+}
+.two-em{
+    font-size: 2em;
+    background-color: #f0fc83;
+    padding: 15px;
+    margin: 10px;
+}
+
+/* vw, vh */
+.one-vw{
+    font-size: 1vw;
+    background-color: azure;
+    padding: 15px;
+    margin: 10px;
+}
+.one-vh{
+    font-size: 1vh;
+    background-color: azure;
+    padding: 15px;
+    margin: 10px;
+}
+.two-vw{
+    font-size: 2vw;
+    background-color: #f0fc83;
+    padding: 15px;
+    margin: 10px;
+}
+.two-vh{
+    font-size: 2vh;
+    background-color: #f0fc83;
+    padding: 15px;
+    margin: 10px;
+}
+
+h1{
+    background-color: #cec4e9;
+    padding: 10px;
+    margin: 10px;
+}
+h3{
+    background-color: aquamarine;
+    padding: 10px;
+    margin: 10px;
+}

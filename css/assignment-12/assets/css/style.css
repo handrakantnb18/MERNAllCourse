@@ -1,0 +1,39 @@
+
+/* [attribute~="value"], */ 
+
+[type~="text"]
+{
+    background-color: #fbfafc;
+    color: #180236;
+    padding: 5px;
+    margin: 5px;
+}
+
+/* [attribute^="value"] */
+[class^="button"]
+{
+    background-color: #350bb1;
+    color: #f8f9fa;
+    text-align: justify;
+    padding: 10px;
+    margin: 10px;
+}
+:hover[class^="button"]
+{
+    background-color: #f3f2f7;
+    color: #4a09e2;
+    text-align: justify;
+    padding: 10px;
+    margin: 10px;
+}
+
+/* [attribute$="value"] */
+[class$="para"]
+{
+    border: 2px solid #010122;
+    display: grid;
+    padding: 10px;
+    margin: 10px;
+    background-color: #ddf8d6;
+    text-align: justify;
+}

@@ -1,0 +1,27 @@
+/*  shadow and effects  */
+h1{
+    text-shadow: 2px 2px #f00d0d, 0 0 5px #0000FF;
+    color: #070202;
+    
+}
+p{
+    text-shadow: 8px 8px #0e0124, 0 0 5px #070202;
+    color: #f7f2f2;
+    text-transform: capitalize;
+    font-size: large;
+}
+
+/* effects */
+div.imgs{
+    width: 50%;
+    box-shadow: 0 14px 18px 0 #f70b0b, 0 16px 28px 0 #d10707;
+    text-align: center;
+    
+}
+
+div.imgs:hover{
+    width: 50%;
+    box-shadow: 0 14px 18px 0 #b2c504, 0 16px 28px 0 #b4f109;
+    text-align: center;
+    padding-left: 20px;
+}

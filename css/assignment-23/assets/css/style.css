@@ -1,0 +1,24 @@
+/*  Download and import the font from google fonts and apply to all elements  */
+@font-face{
+    font-family: foo;
+    src: url(./../fonts/Lato/Lato-Regular.ttf), url(./../fonts/Lato/Lato-Bold.ttf)
+    url(./../fonts/Lato/Lato-BlackItalic.ttf);
+}
+body{
+    background-color: aliceblue;
+    font-family: 'Robot',sans-serif;
+    color: black;
+    text-align: center;
+}
+p{
+    
+    font-family: foo, Arial, Helvetica, sans-serif;
+    color: rgb(3, 3, 122);
+    font-size: 1.2rem;
+}
+h1{
+    font-family:foo, 'Lobster', cursive;
+    color: #050547;
+    margin-bottom: 20px;
+}
+

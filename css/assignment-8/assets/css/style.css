@@ -1,0 +1,24 @@
+
+/* Universal Selectors  */
+
+*{
+    padding: 20px;
+    margin: auto;
+}
+
+/* Type selector  */
+p{
+    text-align: justify;
+    padding: 10px 30px;
+    margin: 8px 8px;
+    display: inline-block;
+    border-radius: 4px;
+}
+
+/* class selector */
+.selector{
+    color: #aa0f0f;
+    transition: none;
+    background-color: #ccc;
+    text-align: justify;
+}

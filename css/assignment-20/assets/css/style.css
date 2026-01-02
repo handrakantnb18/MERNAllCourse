@@ -1,0 +1,63 @@
+
+/* Targeting Orientation */
+@media(orientation: landscape){
+body{
+    background-color: bisque;
+    font-size: 20px;
+    color: #52fa5b;
+    }
+}
+    
+/* 950px greater than then change the properties */
+/*@media(min-width: 950px){
+body{
+    font-size: medium;
+    background-color: #520303;
+    color: #ecf3ed;
+    }
+}*/
+
+/* 950px less than then change properties */ 
+@media(max-width: 950px){
+body{
+    font-size: medium;
+    background-color: #e93e3e;
+    color: #b7e7ba;
+    }
+}
+
+/* 768px greater than then change the properties */
+/*@media(min-width: 768px){
+body{
+    font-size: 16px;
+    background-color: #99bebe;
+    color: #96af06;
+}
+}*/
+
+/* 768px less than athen change the properties */
+@media(max-width: 768px){
+body{
+    font-size: 16px;
+    background-color: #023636;
+    color: #d88507;
+}
+}
+
+/* 480px greter than change the properties */ 
+/*@media(min-width: 480px){
+body{
+font-size: large;
+background-color: #15f020;
+color: aliceblue;
+}
+}*/
+
+/* 480px less than change all properties */
+@media(max-width: 480px){
+body{
+    font-size: 10px;
+    background-color: #e95757;
+    color: #012442;
+}
+}

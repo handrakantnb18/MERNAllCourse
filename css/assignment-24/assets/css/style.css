@@ -1,0 +1,22 @@
+/* Transitions and Transform Effects */
+
+.button{
+    background-color: #0b012e;
+    color: aliceblue;
+    margin: 10px;
+    padding: 10px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    width: 100px;
+    height: 50px;
+    transition-duration: 4s;
+    animation: step-start 2s ease-in-out infinite alternate;
+}
+.button:hover{
+    transition-delay: 1s;
+    transition: width 2s, height 2s, transform 2s;
+    transition-timing-function: linear;
+    background-color: #e8f805;
+    color: black;
+    transform: scale(1.1);
+}
+

@@ -1,0 +1,41 @@
+/*  position property relative, absolute, static, sticky  */
+div{
+    padding: 10px;
+    margin: 10px;
+    margin-bottom: 20px;
+}
+
+/*  relative */
+div.relative{
+    position: relative;
+    width: 400px;
+    height: 200px;
+    border: 3px solid #79AD21;
+}
+
+/* absolute */
+div.absolute{
+    position: absolute;
+    top: 80px;
+    right: 0;
+    width: 200px;
+    height: 100px;
+    border: 3px solid #273b02;
+}
+ /* sticky */
+div.Sticky{
+    position: sticky;
+    top: 0;
+    background-color: #c6d4a5;
+    border: 2px solid #0c0f05;
+    width: 400px;
+    height: 200px;
+}
+
+/*  */
+div.Static{
+    position: static;
+    border: 3px solid #03023d;
+    width: 400px;
+    height: 200px;
+}

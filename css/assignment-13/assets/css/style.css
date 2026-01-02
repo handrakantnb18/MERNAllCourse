@@ -1,0 +1,42 @@
+
+/* pseudo-class */
+/* :hover, */
+p:hover{
+    background-color: #c1f508;
+    color: #000;
+    text-align: justify;
+}
+h2:hover{
+    background-color: #cedce7;
+    color: #000;
+    text-align: justify;
+}
+button:hover{
+    background-color: #e9a107;
+    color: #000;
+    text-align: justify;
+}
+
+/* :nth-child(n) with even and odd,*/ 
+li:nth-child(odd)
+{
+    background-color: #8d8403;
+    color: #4c0bfd;
+    padding: auto;
+    cursor: auto;
+}
+li:nth-child(even)
+{
+    background-color: #6e9c03;
+    color: #f50505;
+    padding: auto;
+    cursor: auto;
+}
+/* :nth-of-type(n) */
+p:nth-of-type(2)
+{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: normal;
+    font-size: 15px;
+    color: #0b044d;
+}

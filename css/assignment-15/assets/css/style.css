@@ -1,0 +1,37 @@
+/* Pseudo-elements: */
+/* ::before, */ 
+
+h1::before
+{
+    content: " @  " ;
+    display: -webkit-inline-flex;
+    color: #7c7e05;
+}
+
+/* ::after, */ 
+h1::after 
+{
+    content: " #";
+    color: #5e10ee;
+    font-weight: bold;
+}
+h1:hover
+{
+    content: " #";
+    color: #5e10ee;
+    font-weight: bold;
+}
+/* ::first-line, */
+p::first-line
+{
+    font-weight: normal;
+    color: #0b025e;
+}
+
+/* ::first-letter */
+p::first-letter
+{
+    color: #ec2207;
+    font-size: 1em;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}

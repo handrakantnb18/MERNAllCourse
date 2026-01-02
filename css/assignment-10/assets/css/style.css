@@ -1,0 +1,35 @@
+
+/* Pseudo-classes */
+a:hover{
+    color: #f3f0ed;
+    display: grid;
+    background-color: #040122;
+    display: block;
+    text-transform: capitalize;
+}
+
+/* Pseudo-classes */
+a:hover{
+    color: #f3f0ed;
+    display: grid;
+    background-color: #040122;
+    display: block;
+    text-transform: uppercase;
+} 
+
+/* Pseudo-elements */
+p::first-line{
+    font-weight: lighter;
+    color: rgb(23, 3, 70);
+}
+p::first-letter{
+    font-weight: bold;
+    color: rgb(252, 9, 9);
+   
+}
+a::first-letter{
+    font-weight: bold;
+    color: #fa0505;
+    text-transform: capitalize;
+}
+
