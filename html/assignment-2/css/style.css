@@ -1,0 +1,21 @@
+ul{
+    color: #030342;
+    margin: 10px;
+    padding-left: 100px;
+}
+
+ol{
+    color: #051f68;
+    margin: 10px;
+    padding-left: 100px;
+}
+
+table, th, td {
+    border:1px solid black;
+    margin-left: 100px;
+    padding: 5px;
+}
+
+th, td {
+   border-color: #96D4D4;
+}
