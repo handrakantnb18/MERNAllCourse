@@ -1,0 +1,1 @@
+console.log('Wel come to External JavaScripts');
