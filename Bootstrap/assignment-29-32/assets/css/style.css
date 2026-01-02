@@ -1,0 +1,44 @@
+/* Import the bootstrap and create the grid structure:
+                xl - 6 columns in one row
+                lg - 4 columns in one row
+                md - 3 columns in one row
+                sm - 1 columns in one row
+                */
+.row{
+    background-color: #dfdff1;
+    border: 1.5px solid #03010a;
+    font-size: 20px;
+}
+div.col-xl-6{
+    background-color: #ebf1c7;
+    color: #05057c;
+    text-align: justify;
+    border: 1px solid black; 
+}
+
+div.col-lg-4{
+    background-color: #f3b3e3;
+    color: #05057c;
+    text-align: justify;
+     border: 1px solid black;
+}
+div.col-md-3{
+    background-color: #e0bd9f;
+    color: #05057c;
+    text-align: justify;
+    border: 1px solid #849b03;
+}
+div.col-sm-1{
+    background-color: #968dc5;
+    color: #05057c;
+    text-align: justify;
+    border: 1px solid black;
+    height: 300px;
+    overflow: scroll;
+}
+div.col-xl-12{
+    background-color: #f7f7f8;
+    color: #05057c;
+    text-align: justify;
+    border: 1px solid black;
+}
